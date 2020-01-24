@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+}
+
+.board {
+  display: flex;
+  width: 1000px;
+  height: 500px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 30px auto;
+  width: 50%;
+}
+
+.square {
+  height: 200px;
+  width: 32.5%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  margin: 2px;
+  font-size: 12em;
+  color: #ff416c;
+  display: flex;
+  justify-content: center;
+  font-family: fantasy;
+  align-items: center;
+  /* background: linear-gradient(to right, #00b4db, #0083b0); */
+  box-shadow: 0px 0px 16px 5px #ccc;
+  transition: transform 0.2s ease-in-out;
+}
+
+.square:hover {
+  cursor: pointer;
+  transform: scaleX(1.1);
+}
+
+.selectPlayerRadio {
+  padding: 10px;
+  text-align: center;
+  background: #ff416c;
+  color: white;
+}
+
+.selectPopup {
+  width: 50%;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+.selectBtn {
+  background-color: #ff416c;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  outline: none;
+}
